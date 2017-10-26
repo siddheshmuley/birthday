@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.birthday.Birthday">
+
+    <ImageView
+        android:src="@drawable/androidparty"
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Birthday!"
+        android:id="@+id/textView"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#ffffff"
+        android:padding="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dear Friend!"
+        app:layout_constraintBottom_toBottomOf="@id/img"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:padding="20dp"
+        />
+
+</android.support.constraint.ConstraintLayout>
